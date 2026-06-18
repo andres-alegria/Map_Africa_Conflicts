@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conflicts between communities and agribusinesses in the Congo Basin</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <!-- Fonts: Rowan (title) + Public Sans (everything else).
+       EDIT here if you change typefaces in css/style.css -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600&family=Rowan&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="header-text">
+        <h1 id="title"><!-- filled from CONFIG --></h1>
+        <p id="subtitle"><!-- filled from CONFIG --></p>
+      </div>
+      <!-- Mongabay logomark (white), centered vertically at far right.
+           EDIT size via --logo-size in css/style.css -->
+      <img id="logo" class="logo" src="img/mongabay-logomark-white.svg" alt="Mongabay"/>
+    </div>
+  </header>
+
+  <div id="map"></div>
+
+  <div class="panel">
+    <span class="legend-label">Conflict intensity</span>
+    <div id="legend"><!-- built from CONFIG.colors --></div>
+  </div>
+
+  <div class="note" id="footnote"><!-- filled from CONFIG --></div>
+
+  <!-- Leaflet + PapaParse (CSV reader) -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

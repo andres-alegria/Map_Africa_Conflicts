@@ -1,0 +1,78 @@
+/* ============================================================================
+   STYLES.  Most colors/sizes come from CONFIG in js/app.js (CSS variables).
+   FONT FAMILIES are set here:
+     • Title  = Rowan (regular)
+     • Everything else = Public Sans (regular)
+   To change fonts, edit the --font-* variables below and the Google Fonts
+   <link> in index.html.
+   ========================================================================== */
+
+:root{
+  --font-title: "Rowan", Georgia, serif;        /* EDIT: title typeface */
+  --font-body:  "Public Sans", Helvetica, Arial, sans-serif;  /* EDIT: all other text */
+
+  /* These are overridden at runtime by CONFIG in app.js, but defaults live here */
+  --header-bg: #181818;
+  --header-text: #FCFCFC;
+  --title-size: 50px;
+  --subtitle-size: 14px;
+  --body-size: 13px;
+
+  --offwhite:#EEF0F0; --white:#FCFCFC; --charcoal:#181818; --muted:#738B87; --divider:#D9D9D9;
+
+  --logo-size: 30px;   /* EDIT: Mongabay logomark size (far right, vertically centered) */
+}
+
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; background:var(--offwhite); color:var(--charcoal);
+           font-family:var(--font-body); font-weight:400; }
+
+/* ---- Header ---- */
+header{ background:var(--header-bg); color:var(--header-text); padding:22px 28px; }
+.header-inner{ display:flex; align-items:center; justify-content:space-between; gap:28px; }
+.header-text{ flex:1 1 auto; }
+header h1{ font-family:var(--font-title); font-weight:400; font-size:var(--title-size);
+           line-height:1.12; margin:0 0 8px; }
+header p{ font-family:var(--font-body); font-weight:400; font-size:var(--subtitle-size);
+          line-height:1.5; margin:0; max-width:900px; opacity:.92; }
+.logo{ width:var(--logo-size); height:auto; display:block; flex:0 0 auto; align-self:flex-start; }
+
+
+/* ---- Map ---- */
+#map{ height:60vh; min-height:320px; width:100%; }
+
+/* ---- Legend / panel ---- */
+.panel{ display:flex; flex-wrap:wrap; gap:16px; padding:14px 28px; background:var(--white);
+        border-top:1px solid var(--divider); align-items:center; }
+#legend{ display:flex; flex-wrap:wrap; gap:16px; }
+.legend-label{ font-size:var(--body-size); font-weight:600; color:var(--charcoal); margin-right:4px; }
+
+.legend-item{ display:flex; align-items:center; gap:8px; font-size:var(--body-size); color:var(--charcoal); }
+.dot{ width:14px; height:14px; border-radius:50%; border:2px solid var(--white);
+      box-shadow:0 0 0 1px #bbb; flex:0 0 auto; }
+.swatch{ width:14px; height:14px; border-radius:2px; border:1px solid var(--charcoal); flex:0 0 auto; }
+
+/* ---- Footnote ---- */
+.note{ padding:12px 28px 26px; background:var(--white); font-size:12px; line-height:1.55;
+       color:var(--muted); }
+
+/* ---- Popup ---- */
+.leaflet-popup-content-wrapper{ border-radius:6px; }
+.popup h3{ font-family:var(--font-body); font-weight:600; margin:0 0 6px; font-size:15px; color:var(--charcoal); }
+.popup .st{ display:inline-block; font-size:10px; font-weight:600; letter-spacing:.03em;
+            text-transform:uppercase; padding:2px 8px; border-radius:20px; color:#fff; margin-bottom:8px; }
+.popup table{ font-size:12px; border-collapse:collapse; color:var(--charcoal); }
+.popup td{ padding:2px 6px 2px 0; vertical-align:top; }
+.popup td.k{ color:var(--muted); white-space:nowrap; }
+.popup a{ color:var(--charcoal); }
+
+/* ---- Small screens (mobile / narrow iframes) ---- */
+@media (max-width:600px){
+  header{ padding:16px 16px; }
+  header h1{ font-size:calc(var(--title-size) * 0.72); }   /* title shrinks */
+  header p{ font-size:13px; }
+  #map{ height:56vh; min-height:300px; }
+  .panel{ padding:12px 16px; gap:10px 14px; }
+  #legend{ gap:8px 14px; }
+  .note{ padding:10px 16px 20px; }
+}

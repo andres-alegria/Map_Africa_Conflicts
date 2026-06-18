@@ -1,0 +1,30 @@
+Locality,Country,Lat,Long,Company,Company_Description,Conflict_type,Intensity,Status,Year
+Mushie,DRC,-3.015453,16.923271,CAP Congo,"Has a 25-year, renewable lease to use 42,000 ha of agricultural and pasture land.",Others,Medium,Resolved,2024
+Bukanga Lonzo,DRC,-4.675486,16.743382,AFRICOM,Public-private partnership agro-industrial park pilot project.,Failure of agribusiness,High,Failed,2014
+Rwamagana,Rwanda,-1.951239,30.434885,Banana Wine CPC Company Ltd,Specializes in producing traditional banana beverages.,Others,Low,Failed,2020
+Nyabihu,Rwanda,-1.641138,29.518001,Nyabihu Potatoes Company,"The plant adds value to local Irish potatoes by producing French fries, peeled potatoes, and potato chips marketed as ""Xtrim Crisps"".",Others,Medium,Failed,2016
+Lokutu,DRC,1.136066,23.623375,PHC,"Around 14,000 ha of oil palm planted across a 63,000 ha site.",Violence,High,Active,2018
+Haut-Uélé,DRC,3.342401,28.737282,Kibali Gold Mine,Combined open pit and underground gold mine.,Violence,High,Active,2022
+Edéa,Cameroon,3.799013,10.126557,SOCAPALM,Major palm oil producer.,Land disputes,High,Active,2000
+Aboisso,Ivory Coast,5.712626,-3.20761,PALMCI,Major palm oil production hub.,Land disputes,High,Active,2015
+Mapangu,DRC,-4.40454,20.30733,Brabanta S.A. (SOCFIN),Produces crude palm oil for the domestic market.,Lack of consent,High,Active,2020
+Lualaba,DRC,-9.696915,23.022544,Placeholder,Multinational mining companies.,Deforestation,High,Active,2015
+Dizangué,Cameroon,3.746589,10.01806,SAFACAM,Produces palm oil and rubber.,Abuse,High,Active,2010
+Mbongo,Cameroon,3.866161,9.865439,SOCAPALM,Major palm oil producer.,Abuse,High,Active,2000
+Muruta,Burundi,-2.929763,29.590805,Iteka Ltd,Processes locally grown tea leaves into export-quality black tea.,Others,High,Active,2022
+Mai- Ndombe,Cameroon,-2.540694,18.606573,REDD+,"Emission Reductions Program, covers 12 million ha.",Others,High,Active,2020
+Meyomessala,Cameroon,3.107781,12.244903,SUDCAM,"45,000 ha natural rubber plantation.",Others,High,Active,2011
+Kundelungu,DRC,-9.8,27.7,Ferme Espoir,"5,000 ha agricultural and ranching complex.",Others,Low,Active,2020
+Kaniama,DRC,-7.509481,24.171579,Service National de Kaniama-Kasese,Major agricultural and civic education center,Social tensions,Medium,Active,2019
+Njombé,Cameroon,4.586724,9.652932,PHP,"Occupies about 3,530 ha for banana cultivation.",Precariousness,Medium,Active,2010
+Mbandjock,Cameroon,4.446195,11.902462,SOSUCAM,Sugar-cane plantation.,Health,Medium,Active,2010
+Rukana II,Burundi,-2.77287,29.060659,COGERCO,Cotton management company.,Others,Medium,Active,2023
+Rwanda,Rwanda,-1.978749,30.353942,Horizon Sopyrwa,"Engages in the production, processing and marketing of pyrethrum; a natural botanical insecticide.",Others,Medium,Active,2008
+Boteka,DRC,-0.393842,19.09344,PHC,"Around 3,700 ha of oil palm planted across a 6,000 ha site.",Others,Medium,Active,2018
+Campo,Cameroon,2.224974,10.862961,Camvert,"Aims to convert 60,000 ha of forest into palm plantations and factories.",Others,Medium,Active,2022
+Yaligimba,DRC,2.27565,22.902608,PHC,"Around 8,000 ha of oil palm planted across a 30,000 ha site.",Others,Medium,Active,2018
+Kienké,Cameroon,2.909648,10.025588,SOCAPALM,Major palm oil producer.,Others,Medium,Active,2000
+Dibombari,Cameroon,4.178504,9.65579,SOCAPALM,Produces palm oil and rubber.,Others,Medium,Active,2000
+Nkoteng,Cameroon,4.50469,12.118712,SOSUCAM,Sugar-cane plantation.,Others,Medium,Active,2010
+Loum,Cameroon,4.720055,9.727499,PHP,Largest banana producer in Cameroon.,Others,Medium,Active,2010
+Mandelia,Chad,11.728432,15.245654,Mandelia Dairy Complex,Large-scale integrated dairy farm.,Others,Medium,Active,2020
