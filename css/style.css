@@ -12,7 +12,7 @@
   --font-body:  "Public Sans", Helvetica, Arial, sans-serif;  /* EDIT: all other text */
 
   /* These are overridden at runtime by CONFIG in app.js, but defaults live here */
-  --header-bg: #181818;
+  --header-bg: #102f29;
   --header-text: #FCFCFC;
   --title-size: 50px;
   --subtitle-size: 14px;

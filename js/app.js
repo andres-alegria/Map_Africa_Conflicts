@@ -21,7 +21,7 @@ const CONFIG = {
 
   /* ---- COLORS & FONTS ---------------------------------------------------- */
   // EDIT: header background color.
-  headerBg:    "#181818",   // Charcoal
+  headerBg:    "#102f29",
   headerText:  "#FCFCFC",
 
   // EDIT: font sizes (any CSS unit). Font FAMILIES are set in css/style.css.
