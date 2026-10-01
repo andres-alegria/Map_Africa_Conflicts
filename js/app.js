@@ -45,11 +45,15 @@ const CONFIG = {
 
   /* ---- BASEMAP ----------------------------------------------------------- */
   // EDIT: swap the basemap here.
-  //   • Default below is CARTO Positron (free, no key).
+  //   • Default below is CARTO Positron. Since Sept 2026 it needs a key (below).
   //   • To use a MAPBOX STYLE, set basemapUrl to:
   //       https://api.mapbox.com/styles/v1/USERNAME/STYLEID/tiles/256/{z}/{x}/{y}@2x?access_token=YOUR_TOKEN
   basemapUrl: "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-  basemapAttribution: "© OpenStreetMap © CARTO",
+  basemapAttribution: "© OpenStreetMap contributors © CARTO",
+  // EDIT: CARTO Basemaps API key (free for non-commercial use up to 5M tiles a
+  // month; request one at https://carto.com/basemaps/apikey). Without it every
+  // CARTO tile shows an "API KEY REQUIRED" watermark. Ignored for non-CARTO URLs.
+  basemapKey: "",
 
   /* ---- BACKGROUND POLYGON (Congo Basin extent) --------------------------- */
   // EDIT: GeoJSON drawn beneath the markers as a background. Set basinPath to
@@ -117,7 +121,11 @@ document.getElementById("subtitle").textContent = CONFIG.subtitle;
 document.getElementById("footnote").innerHTML = CONFIG.footnote;
 
 const map = L.map("map", { scrollWheelZoom: true }).setView(CONFIG.center, CONFIG.zoom);
-L.tileLayer(CONFIG.basemapUrl, { maxZoom: 19, attribution: CONFIG.basemapAttribution }).addTo(map);
+let tileUrl = CONFIG.basemapUrl;
+if (CONFIG.basemapKey && tileUrl.includes("cartocdn.com")) {
+  tileUrl += (tileUrl.includes("?") ? "&" : "?") + "key=" + encodeURIComponent(CONFIG.basemapKey);
+}
+L.tileLayer(tileUrl, { maxZoom: 19, attribution: CONFIG.basemapAttribution }).addTo(map);
 
 // Background polygon (Congo Basin extent). Loaded first so markers sit on top.
 // Uses its own Leaflet pane below the marker pane to guarantee stacking order.
