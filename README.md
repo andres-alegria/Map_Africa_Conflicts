@@ -25,6 +25,8 @@ Almost everything editorial lives in the `CONFIG` object at the top of
 - **colors** — marker + legend color per `Intensity` value. The keys must match
   the `Intensity` column in `data/points.csv` exactly; their order sets the
   legend order.
+- **basemapKey** — CARTO Basemaps API key, required for the default CARTO
+  basemap since Sept 2026 (free at carto.com/basemaps/apikey).
 - **popupFields** — which CSV columns appear in each marker popup, and their
   labels. The popup heading uses `Locality`.
 
