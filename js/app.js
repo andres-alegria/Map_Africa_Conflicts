@@ -53,7 +53,7 @@ const CONFIG = {
   // EDIT: CARTO Basemaps API key (free for non-commercial use up to 5M tiles a
   // month; request one at https://carto.com/basemaps/apikey). Without it every
   // CARTO tile shows an "API KEY REQUIRED" watermark. Ignored for non-CARTO URLs.
-  basemapKey: "",
+  basemapKey: "cb1_460j_1_7fd45606d92dd46a94d15ca7",
 
   /* ---- BACKGROUND POLYGON (Congo Basin extent) --------------------------- */
   // EDIT: GeoJSON drawn beneath the markers as a background. Set basinPath to
